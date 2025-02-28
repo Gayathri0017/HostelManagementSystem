@@ -6,18 +6,18 @@ import java.util.Scanner;
 
 public class HostelManagementSystem {
     public static void main(String[] args) {
-         System.out.println("input1.txt not found. Using manual input.");
         Scanner sc;
-       // File file = new File("C:\\Users\\Lenovo\\Desktop\\input111.txt");
-        File file = new File("HMS\\input111.txt");
-
+        File file = new File("HMS\\input.txt");
         if (file.exists()) {
-          try {
-              sc = new Scanner(file);
-          } catch (FileNotFoundException e) {
-              System.out.println("File not found. Switching to manual input.");
-              sc = new Scanner(System.in);
-         
+            try {
+                sc = new Scanner(file);
+            } catch (FileNotFoundException e) {
+                System.out.println("File not found. Switching to manual input.");
+                sc = new Scanner(System.in);
+            }
+        } else {
+            System.out.println("input.txt not found. Using manual input.");
+            sc = new Scanner(System.in);
         }
 
         try {
