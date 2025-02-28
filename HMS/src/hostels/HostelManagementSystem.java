@@ -8,17 +8,14 @@ public class HostelManagementSystem {
     public static void main(String[] args) {
          System.out.println("input1.txt not found. Using manual input.");
         Scanner sc;
-        //File file = new File("C:\\Users\\Lenovo\\Desktop\\input111.txt");
-        // if (file.exists()) {
-        //     try {
-        //         sc = new Scanner(file);
-        //     } catch (FileNotFoundException e) {
-        //         System.out.println("File not found. Switching to manual input.");
-        //         sc = new Scanner(System.in);
-        //     }
-        // } else {
+        File file = new File("C:\\Users\\Lenovo\\Desktop\\input111.txt");
+        if (file.exists()) {
+          try {
+              sc = new Scanner(file);
+          } catch (FileNotFoundException e) {
+              System.out.println("File not found. Switching to manual input.");
+              sc = new Scanner(System.in);
          
-            sc = new Scanner(System.in);
         }
 
         try {
