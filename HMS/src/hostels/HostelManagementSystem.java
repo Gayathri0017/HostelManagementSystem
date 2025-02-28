@@ -57,7 +57,7 @@ public class HostelManagementSystem {
         }
     }
 
-    public static void adminOperations(Scanner sc) {
+    private static void adminOperations(Scanner sc) {
         Hmsfees f = new Hmsfees();
         Admin admin = new Admin();
         Maintenance m = new Maintenance();
