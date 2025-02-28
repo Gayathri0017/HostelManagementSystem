@@ -21,7 +21,7 @@ public class Maintenance {
                     raiseRequest(sc);
                     break;
                 case 2:
-                    viewRequests();
+                    viewRequests(sc);
                     break;
                 case 3:
                     updateRequestStatus(sc);
