@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class HostelManagementSystem {
     public static void main(String[] args) {
+         System.out.println("input1.txt not found. Using manual input.");
         Scanner sc;
         //File file = new File("C:\\Users\\Lenovo\\Desktop\\input111.txt");
         // if (file.exists()) {
@@ -16,7 +17,7 @@ public class HostelManagementSystem {
         //         sc = new Scanner(System.in);
         //     }
         // } else {
-        //     System.out.println("input.txt not found. Using manual input.");
+         
             sc = new Scanner(System.in);
         }
 
