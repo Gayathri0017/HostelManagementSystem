@@ -8,7 +8,9 @@ public class HostelManagementSystem {
     public static void main(String[] args) {
          System.out.println("input1.txt not found. Using manual input.");
         Scanner sc;
-        File file = new File("C:\\Users\\Lenovo\\Desktop\\input111.txt");
+       // File file = new File("C:\\Users\\Lenovo\\Desktop\\input111.txt");
+        File file = new File(System.getProperty("user.dir") + "/input111.txt");
+
         if (file.exists()) {
           try {
               sc = new Scanner(file);
