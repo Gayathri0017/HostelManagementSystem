@@ -9,7 +9,7 @@ public class HostelManagementSystem {
          System.out.println("input1.txt not found. Using manual input.");
         Scanner sc;
        // File file = new File("C:\\Users\\Lenovo\\Desktop\\input111.txt");
-        File file = new File(System.getProperty("/input111.txt");
+        File file = new File("\input111.txt");
 
         if (file.exists()) {
           try {
@@ -54,7 +54,7 @@ public class HostelManagementSystem {
             System.out.println("Unexpected error: " + e.getMessage());
         } finally {
             sc.close();
-        }
+        }} 
     }
 
     private static void adminOperations(Scanner sc) {
