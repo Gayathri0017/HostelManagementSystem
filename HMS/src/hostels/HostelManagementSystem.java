@@ -54,7 +54,7 @@ public class HostelManagementSystem {
             System.out.println("Unexpected error: " + e.getMessage());
         } finally {
             sc.close();
-        }} 
+        }
     }
 
     private static void adminOperations(Scanner sc) {
