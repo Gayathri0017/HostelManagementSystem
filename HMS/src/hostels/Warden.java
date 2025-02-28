@@ -12,7 +12,7 @@ public class Warden {
 
     public void manageRooms(Scanner sc) {
         this.sc = sc;
-        while (sc.hasNext()) {
+        while (true) {
             System.out.println("\n-----Warden Room Management-----");
             System.out.println("1) View Rooms");
             System.out.println("2) Allocate a Room");
@@ -28,7 +28,7 @@ public class Warden {
                     roomManager.displayRooms();
                     break;
                 case 2:
-                    System.out.println("Do you want to allocate\n1)Single room\n2)Shared room (4 in a room)");
+                    System.out.println("Do you want to allocate\n1) Single room\n2) Shared room (4 in a room)");
                     int ch = Integer.parseInt(sc.nextLine().trim());
                     if (ch == 1) {
                         System.out.print("Enter room label to allocate a full room: ");
@@ -41,7 +41,7 @@ public class Warden {
                     }
                     break;
                 case 3:
-                    System.out.println("Do you want to vacate\n1)Single room\n2)Shared room (4 in a room)");
+                    System.out.println("Do you want to vacate\n1) Single room\n2) Shared room (4 in a room)");
                     int c = Integer.parseInt(sc.nextLine().trim());
                     if (c == 1) {
                         System.out.print("Enter room label to vacate a full room: ");
@@ -59,15 +59,15 @@ public class Warden {
                     System.out.println("1) Log entry of visitor\n2) Log exit of visitor");
                     int vis = Integer.parseInt(sc.nextLine().trim());
                     if (vis == 1) {
-                        VisitorManagement.logEntry(sc);
+                       // VisitorManagement.logEntry(sc);
                     } else if (vis == 2) {
-                        VisitorManagement.logExit(sc);
+                      //  VisitorManagement.logExit(sc);
                     } else {
                         System.out.println("Enter a valid value");
                     }
                     break;
                 case 5:
-                    VisitorManagement.viewVisitorDetails(sc);
+                   // VisitorManagement.viewVisitorDetails(sc);
                     break;
                 case 6:
                     System.out.println("Exiting room management.");
